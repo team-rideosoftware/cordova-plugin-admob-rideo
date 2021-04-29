@@ -5,14 +5,14 @@
     <description>Robust, reliable and easy to use Cordova Admob plugin for Android and iOS
         phone. Allows preloading and automatic loading of interstitials and banners plus more.
     </description>
-    <author>tomitank</author>
+    <author>Rideo</author>
     <license>MIT</license>
     <keywords>admob, google, cordova-ios, cordova-android, ecosystem:cordova, android, ios,
         money, monetization, iad, services, play, earn, publicity, advertisment, advertising,
         ads, ad, eclipse, android studio
     </keywords>
-    <repo>https://github.com/tomitank/cordova-plugin-admob-tomitank.git</repo>
-    <issue>https://github.com/tomitank/cordova-plugin-admob-tomitank/issues</issue>
+    <repo>https://github.com/team-rideosoftware/cordova-plugin-admob-rideo.git</repo>
+    <issue>https://github.com/team-rideosoftware/cordova-plugin-admob-rideo/issues</issue>
 
     <engines>
         <engine name="cordova" version=">=9.0.0" />
@@ -81,7 +81,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods>
-                <pod name="Google-Mobile-Ads-SDK" spec="~> 8.1.0" />
+                <pod name="Google-Mobile-Ads-SDK" spec="~> 8.4.0" />
                 <pod name="GoogleUserMessagingPlatform" spec="~> 1.2.0" />
             </pods>
         </podspec>

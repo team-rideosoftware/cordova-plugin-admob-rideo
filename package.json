@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-admob-tomitank",
+  "name": "cordova-plugin-admob-rideo",
   "version": "4.1.0",
   "description": "Cordova AdMob Plugin for Google AdMob",
   "scripts": {
@@ -21,14 +21,14 @@
     "lint:spaces": "lintspaces -n -t -d spaces *.* src/**/*.* tests/**/*.* examples/*/*.* examples/*/www/*.*"
   },
   "cordova": {
-    "id": "cordova-plugin-admob-tomitank",
+    "id": "cordova-plugin-admob-rideo",
     "platforms": [
       "android",
       "ios"
     ]
   },
-  "homepage": "https://tomitank.github.io/cordova-plugin-admob-tomitank/",
-  "repository": "tomitank/cordova-plugin-admob-tomitank",
+  "homepage": "https://github.com/team-rideosoftware/cordova-plugin-admob-rideo/",
+  "repository": "team-rideosoftware/cordova-plugin-admob-rideo",
   "keywords": [
     "cordova",
     "admob",
@@ -42,7 +42,7 @@
     "admobpro"
   ],
   "tonicExampleFilename": "test.js",
-  "author": "tomitank",
+  "author": "Rideo",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.5",
