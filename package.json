@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-admob-rideo",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "Cordova AdMob Plugin for Google AdMob",
   "scripts": {
     "prepublish": "run-s clean build",
@@ -28,7 +28,10 @@
     ]
   },
   "homepage": "https://github.com/team-rideosoftware/cordova-plugin-admob-rideo/",
-  "repository": "team-rideosoftware/cordova-plugin-admob-rideo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-rideosoftware/cordova-plugin-admob-rideo.git"
+  },
   "keywords": [
     "cordova",
     "admob",
@@ -133,5 +136,15 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/team-rideosoftware/cordova-plugin-admob-rideo/issues"
+  },
+  "dependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=9.0.0"
+    }
+  ]
 }
