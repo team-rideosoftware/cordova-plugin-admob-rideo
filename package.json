@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-admob-rideo",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Cordova AdMob Plugin for Google AdMob",
   "scripts": {
     "prepublish": "run-s clean build",
