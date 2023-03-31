@@ -617,17 +617,17 @@
 
 - (GADAdSize)__AdSizeFromString:(NSString *)string {
     if ([string isEqualToString:@"BANNER"]) {
-        return kGADAdSizeBanner;
+        return GADAdSizeBanner;
     } else if ([string isEqualToString:@"IAB_MRECT"]) {
-        return kGADAdSizeMediumRectangle;
+        return GADAdSizeMediumRectangle;
     } else if ([string isEqualToString:@"IAB_BANNER"]) {
-        return kGADAdSizeFullBanner;
+        return GADAdSizeFullBanner;
     } else if ([string isEqualToString:@"IAB_LEADERBOARD"]) {
-        return kGADAdSizeLeaderboard;
+        return GADAdSizeLeaderboard;
     } else if ([string isEqualToString:@"LARGE_BANNER"]) {
-        return kGADAdSizeLargeBanner;
+        return GADAdSizeLargeBanner;
     } else if ([string isEqualToString:@"FLUID"]) {
-        return kGADAdSizeFluid;
+        return GADAdSizeFluid;
     } else if ([string isEqualToString:@"SMART_BANNER"]) {
         CGRect pr = self.webView.superview.bounds;
         if (pr.size.width > pr.size.height) {
@@ -640,7 +640,7 @@
         CGRect pr = self.webView.superview.bounds;
         GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(pr.size.width);
     } else {
-        return kGADAdSizeInvalid;
+        return GADAdSizeInvalid;
     }
 }
 
