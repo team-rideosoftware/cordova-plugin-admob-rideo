@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-admob-rideo"
-    version="4.2.3" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    version="4.3.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Cordova AdMob Plugin</name>
     <description>Robust, reliable and easy to use Cordova Admob plugin for Android and iOS
         phone. Allows preloading and automatic loading of interstitials and banners plus more.
@@ -26,17 +26,12 @@
     </js-module>
 
     <dependency id="cordova-promise-polyfill" version="~0.0.2" />
-<!--
-    <dependency id="cordova-admob-sdk-tomitank" version="*" />
-    <dependency id="cordova-admob-ump-tomitank" version="*" />
--->
+
     <platform name="android">
         <preference name="ADMOB_APP_ID" default=""/>
-        <!-- instead of cordova-admob-sdk-tomitank -->
-        <preference name="PLAY_SERVICES_VERSION" default="16.0.+"/>
-        <framework src="com.google.android.gms:play-services-base:$PLAY_SERVICES_VERSION" />
-        <framework src="com.google.android.gms:play-services-ads:$PLAY_SERVICES_VERSION" />
-
+        <preference name="PLAY_SERVICES_VERSION" default="18.2.0"/>
+        <framework src="com.google.android.gms:play-services-base:18.2.0" />
+        <framework src="com.google.android.gms:play-services-ads:19.4.0" />
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <activity android:name="com.google.android.gms.ads.AdActivity"
                 android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -45,10 +40,12 @@
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
                 android:value="$ADMOB_APP_ID"/>
         </config-file>
+
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
+
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="AdMob">
                 <param name="android-package" value="name.tomitank.cordova.admob.AdMob" />
@@ -75,8 +72,6 @@
         </config-file>
         <header-file src="src/ios/CDVAdMob.h" />
         <source-file src="src/ios/CDVAdMob.m" />
-        <!-- instead of cordova-admob-sdk-tomitank -->
-        <!-- prepare for version 4.2.0 -->
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
