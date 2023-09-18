@@ -4,7 +4,7 @@
   "description": "Cordova AdMob Plugin for Google AdMob",
   "scripts": {
     "prepublish": "run-s clean build",
-    "postpublish": "run-s docs",
+    "postpublish": "",
     "pretest": "cross-env BABEL_ENV=test run-s build",
     "test": "run-p test:*",
     "test:ios": "cordova-testbed --platform ios --plugin .",
@@ -12,10 +12,6 @@
     "version": "sync-package-version --cordova-plugin",
     "build": "cross-env NODE_ENV=production rollup -c -o www/admob.js",
     "clean": "rimraf *.log coverage dist www",
-    "docs": "run-s docs:*",
-    "docs:esdoc": "esdoc -c esdoc.json",
-    "docs:commit": "cd gh-pages && git add -A . && git commit -a -m 'Update page'",
-    "docs-watch": "nodemon -w src --exec 'npm run docs'",
     "lint": "run-p lint:*",
     "lint:js": "eslint --ext js,md .",
     "lint:spaces": "lintspaces -n -t -d spaces *.* src/**/*.* tests/**/*.* examples/*/*.* examples/*/www/*.*"
